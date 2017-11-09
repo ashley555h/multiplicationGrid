@@ -15,9 +15,9 @@ public class multiplicationTable {
     }
 
     public static void printMultiplicationTable(int tableSize) {
-        System.out.format("      ");
+        System.out.format("    ");
         for(int i = 0; i<=tableSize; i++) {
-            System.out.format("\t",i);
+            System.out.format("%4d",i);
         }
         System.out.println();
         for(int i = 0; i <= tableSize; i++) {
@@ -25,7 +25,7 @@ public class multiplicationTable {
             for(int j = 0;j <= tableSize; j++) {
                 System.out.format("%4d",i*j);
             }
-            System.out.println();
+            System.out.println(); 
         }
     }
 }
